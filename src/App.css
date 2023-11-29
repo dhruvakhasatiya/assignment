@@ -36,3 +36,133 @@
     transform: rotate(360deg);
   }
 }
+
+.gallery-main-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gallery-main {
+  padding: 40px;
+  width: 70%;
+  background-color: #d8e8ed;
+  margin: 20px 0;
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+}
+
+.top-left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.MuiTypography-root.top-gallery-header {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.MuiTypography-root.page-name {
+  text-transform: uppercase;
+  color: blue;
+  font-size: 14px;
+}
+
+.MuiTypography-root.gallery-sub-header {
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.MuiModal-root.modal-main {
+  top: 10%;
+  left: 30%;
+}
+
+.common-modal {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  height: fit-content;
+  width: 600px;
+  padding: 10px;
+}
+
+.carousel-main-image-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.carousel-main-image {
+  height: 350px;
+  width: 95%;
+}
+
+.carousel-image-div {
+ display: flex !important;
+ align-items: center;
+ justify-content: center;
+}
+
+.carousel-image {
+  height: 125px;
+  width: 95%;
+}
+
+.gallery-tabs {
+  margin-bottom: 20px;
+}
+
+.MuiTab-root.gallery-tab {
+  border: 1px solid green;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 5px;
+}
+
+.MuiButtonBase-root.MuiTab-root.Mui-selected.gallery-tab {
+  color: white;
+  background-color: green;
+}
+
+@media (max-width: 1280px) { 
+  .MuiModal-root.modal-main {
+    top: 5%;
+    left: 22%;
+  }
+
+  .carousel-main-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 960px) { 
+  .MuiModal-root.modal-main {
+    top: 10%;
+    left: 15%;
+  }
+
+  .common-modal {
+    width: 80%;
+  }
+
+  .carousel-main-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) { 
+  .MuiTab-root.gallery-tab {
+    width: 35px;
+  }
+}
